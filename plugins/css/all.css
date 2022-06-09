@@ -358,3 +358,7 @@
    width: 50px;
    align-self: center;
  }
+
+ #skills #skills-child .col{
+   background: #F3F3F3;
+ }
