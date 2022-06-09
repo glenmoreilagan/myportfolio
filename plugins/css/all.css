@@ -1,0 +1,360 @@
+ * {
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   list-style: none;
+ }
+
+ body {
+   font-family: century gothic, Verdana, Geneva, Tahoma, sans-serif;
+   color: #2A3543;
+ }
+
+ /* NAVBAR DIV */
+ nav {
+   background: #6187D8;
+   height: 80px;
+   width: 100%;
+   z-index: 1;
+ }
+
+ label.logo {
+   color: #fff;
+   font-size: 35px;
+   font-weight: bold;
+   line-height: 80px;
+   padding: 0 100px;
+ }
+
+ nav ul {
+   float: right;
+   margin-right: 20px;
+ }
+
+ nav ul li {
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 5px;
+ }
+
+ nav ul li a {
+   color: #fff;
+   font-size: 1em;
+   text-transform: uppercase;
+   padding: 7px 13px;
+   border-radius: 3px;
+ }
+
+ a.active,
+ a:hover {
+   background: #5170B4;
+   transform: .5s;
+ }
+
+ .checkbtn {
+   font-size: 30px;
+   color: #fff;
+   float: right;
+   line-height: 80px;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+ }
+
+ #check {
+   display: none;
+ }
+
+
+ #myBtn {
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   right: 30px;
+   z-index: 99;
+   font-size: 18px;
+   border: none;
+   outline: none;
+   background-color: #2A3543;
+   color: white;
+   cursor: pointer;
+   padding: 10px 10px 10px 10px;
+   /* border-radius: 4px; */
+ }
+
+ #myBtn:hover {
+   background-color: #314059;
+ }
+
+ .sticky {
+   /* top: 0; */
+   position: fixed;
+   /* width: 100%; */
+ }
+
+ @media (max-width: 952px) {
+   label.logo {
+     font-size: 30px;
+     padding-left: 50px;
+   }
+
+   nav ul li a {
+     font-size: 16px;
+   }
+
+   #home .col1-text {
+     /* position: absolute;
+    top: 150px; */
+     left: 20px !important;
+   }
+
+   #home .col2 img {
+     width: 25em;
+     height: 25em;
+     /* overflow: hidden; */
+     /* margin-top: 30px; */
+   }
+ }
+
+ @media (max-width: 858px) {
+   .checkbtn {
+     display: block;
+   }
+
+   ul {
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     background: #5170B4;
+     top: 80px;
+     left: -100%;
+     text-align: center;
+     transition: all .5s;
+     z-index: 1;
+   }
+
+   nav ul li {
+     display: block;
+     margin: 50px 0;
+     line-height: 30px;
+   }
+
+   nav ul li a {
+     font-size: 20px;
+   }
+
+   a:hover,
+   a.active {
+     background: none;
+     color: #fff;
+     font-weight: bold;
+   }
+
+   #check:checked~ul {
+     left: 0;
+   }
+
+   #home .col1-text {
+     /* position: absolute; */
+     top: 80px !important;
+     left: 20px !important;
+   }
+
+   #home .col1 {
+     width: 100vw;
+   }
+
+   #home .col2 {
+     /* width: 300px;
+   height: 300px; */
+     /* overflow: hidden; */
+     display: none !important;
+   }
+
+   #about {
+     display: unset;
+   }
+
+   #about-child,
+   #skills-child {
+     flex-direction: column;
+   }
+
+   #about-child .col,
+   #skills-child .col {
+     width: 92vw;
+   }
+ }
+
+ .__content {
+   display: flex;
+   flex-direction: column;
+ }
+
+ /* HOME DIV */
+ #home {
+   display: flex;
+   justify-content: center;
+   height: 90vh;
+   /* flex-flow: nowrap; */
+   /* background: red; */
+   /* padding: 10px; */
+   /* overflow: hidden; */
+   /* border: 1px solid; */
+ }
+
+ #home>div {
+   width: 50vw;
+   /* background-color: white; */
+   /* border: 1px solid; */
+   margin: 1em;
+ }
+
+ #home .col1 {
+   position: relative;
+ }
+
+ #home .col1-text {
+   position: absolute;
+   top: 150px;
+   left: 50px;
+ }
+
+ small {
+   max-width: 50px;
+   word-wrap: break-word;
+ }
+
+ #home .col1 .col1-text #btn-download-cv {
+   background-color: #2A3543;
+   border: none;
+   padding: 10px;
+   color: #fff;
+   margin-top: 50px;
+   cursor: pointer;
+ }
+
+ #home .col1 .col1-text #btn-download-cv:hover {
+   background-color: #314059;
+ }
+
+ #home .col2 {
+   display: flex;
+   /* justify-content: center; */
+ }
+
+ #home .col2 img {
+   width: 550px;
+   height: 450px;
+   /* overflow: hidden; */
+   margin-top: 30px;
+ }
+
+ /* ABOUT DIV */
+ #about {
+   height: 65vh;
+   /* border: 1px solid; */
+   margin-top: 10px;
+ }
+
+ #header-text-center {
+   text-align: center;
+ }
+
+ #about-child {
+   display: flex;
+   justify-content: center;
+ }
+
+ #about-child>div {
+   /* border: 1px solid #DEDEDE; */
+   width: 15vw;
+   height: 250px;
+   margin: 1em;
+   padding: 1em;
+   box-shadow: 5px 5px 15px #d9d9d9,
+     -5px -5px 15px #ffffff;
+ }
+
+ #about-child .col .icon,
+ #about-child .col .header-info {
+   display: flex;
+   justify-content: center;
+   /* border: solid; */
+
+ }
+
+ #about-child .col .header-info span {
+   font-weight: bold;
+   /* border: solid; */
+   line-height: 50px;
+ }
+
+ #about-child .col .description-info {
+   text-align: center;
+   font-size: 12px;
+ }
+
+ /* SKILLS DIV */
+ #skills {
+   background-color: #F3F3F3;
+   height: 65vh;
+   /* border: 1px solid; */
+   margin-top: 10px;
+ }
+
+ #header-text-center {
+   line-height: 70px;
+   text-align: center;
+ }
+
+ #skills-child {
+   display: flex;
+   justify-content: center;
+ }
+
+ #skills-child>div {
+   /* border: 1px solid #DEDEDE; */
+   width: 15vw;
+   height: 250px;
+   margin: 1em;
+   padding: 1em;
+   box-shadow: 5px 5px 15px #d9d9d9,
+     -5px -5px 15px #ffffff;
+ }
+
+ #skills-child .col .icon,
+ #skills-child .col .header-info {
+   display: flex;
+   justify-content: center;
+   /* border: solid; */
+
+ }
+
+ #skills-child .col .header-info span {
+   font-weight: bold;
+   /* border: solid; */
+   line-height: 50px;
+ }
+
+ #skills-child .col .description-info {
+   display: flex;
+   justify-content: space-between;
+   /* text-align: center; */
+   font-size: 12px;
+   margin-top: 10px;
+ }
+
+ #skills-child .col .description-info .tech-use {
+   width: 10px;
+ }
+
+ #skills-child .col .description-info .tech-use > i {
+   font-size: 32px;
+ }
+
+ #skills-child .col .description-info .skill-level,
+ #skills-child .col .description-info .skill-rate {
+   width: 50px;
+   align-self: center;
+ }
