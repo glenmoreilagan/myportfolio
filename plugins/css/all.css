@@ -5,6 +5,10 @@
    list-style: none;
  }
 
+ html {
+   scroll-behavior: smooth;
+ }
+
  body {
    font-family: century gothic, Verdana, Geneva, Tahoma, sans-serif;
    color: #2A3543;
@@ -46,7 +50,7 @@
  }
 
  a.active,
- a:hover {
+ #myBtn ul li a:hover {
    background: #5170B4;
    transform: .5s;
  }
@@ -88,7 +92,7 @@
 
  .sticky {
    /* top: 0; */
-   position: fixed;
+   /* position: fixed; */
    /* width: 100%; */
  }
 
@@ -184,12 +188,14 @@
    }
 
    #about-child,
-   #skills-child {
+   #skills-child,
+   #projects-child {
      flex-direction: column;
    }
 
    #about-child .col,
-   #skills-child .col {
+   #skills-child .col,
+   #projects-child .col {
      width: 92vw;
    }
  }
@@ -370,3 +376,78 @@
  #skills #skills-child .col{
    background: #F3F3F3;
  }
+
+ /* PROJECTS DIV */
+ #projects-child {
+  display: flex;
+  justify-content: center;
+}
+
+ #projects-child>div {
+  /* border: 1px solid #DEDEDE; */
+  width: 15vw;
+  height: 300px;
+  margin: 1em;
+  padding: 1em;
+  box-shadow: 5px 5px 15px #d9d9d9,
+    -5px -5px 15px #ffffff;
+}
+
+#projects-child .col .icon,
+#projects-child .col .header-info {
+  display: flex;
+  justify-content: center;
+  /* border: solid; */
+
+}
+
+#projects-child .col .header-info span {
+  font-weight: bold;
+  /* border: solid; */
+  line-height: 50px;
+}
+
+#projects-child .col .description-info {
+  text-align: center;
+  font-size: 12px;
+}
+
+.tech-stacks-used {
+  position: absolute;
+  font-size: 12px;
+  top: 40px;
+}
+
+.tech-div {
+  display: flex; 
+  justify-content: flex-start; 
+  flex-wrap: wrap;
+}
+
+.tech-used {
+  border: 1px solid; 
+  font-size: 10px; 
+  padding: 5px; 
+  margin: 5px;
+}
+
+.tech-div .html {
+  color: #DD4B25;
+  border-color: #DD4B25;
+}
+.tech-div .css {
+  color: #254BDD;
+  border-color: #254BDD;
+}
+.tech-div .javascript {
+  color: #E2C430;
+  border-color: #E2C430;
+}
+.tech-div .laravel {
+  color: #EB4D43;
+  border-color: #EB4D43;
+}
+.tech-div .chartjs {
+  color: #F67C97;
+  border-color: #F67C97;
+}
