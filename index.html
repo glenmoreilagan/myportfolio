@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="plugins/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+  <nav id="myHeader">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo" for="">PORTFOLIO</label>
+
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#">Feedback</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+  <!-- HOME -->
+  <!-- <div class="__content"> -->
+
+    <div id="home">
+      <div class="col1">
+        <div class="col1-text">
+          <h4>Hi I'm GLENMORE</h4>
+          <h1>SOFTWARE DEVELOPER</h1>
+          <!-- <br> -->
+          <small>Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has
+            been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.</small>
+          <br>
+
+          <a href="plugins/files/glenmore-ilagan-cv.pdf" download rel="noopener noreferrer" target="_blank">
+            <button id="btn-download-cv">DOWNLOAD CV</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="col2">
+        <img src="plugins/img/coding-edited.svg" alt="coding-time">
+      </div>
+    </div>
+    <!-- HOME -->
+
+    <!-- ABOUT -->
+    <div id="about">
+      <h1 id="header-text-center">ABOUT US</h1>
+      <div id="about-child">
+        <div class="col col1">
+          <div class="icon">
+            <img src="plugins/img/gym.svg" alt="think" width="85px" height="85px">
+          </div>
+          <div class="header-info">
+            <span>GYM</span>
+          </div>
+          <div class="description-info">
+            <span>
+              One of my favorite hobby is workout to get physical fit.
+            </span>
+          </div>
+        </div>
+        <div class="col col2">
+          <div class="icon">
+            <img src="plugins/img/read.svg" alt="think" width="85px" height="85px">
+          </div>
+          <div class="header-info">
+            <span>READ</span>
+          </div>
+          <div class="description-info">
+            <span>
+              Sometimes I read books about money like rich dad and poor dad.
+            </span>
+          </div>
+        </div>
+        <div class="col col3">
+          <div class="icon">
+            <img src="plugins/img/webdev.svg" alt="think" width="85px" height="85px">
+          </div>
+          <div class="header-info">
+            <span>CODE</span>
+          </div>
+          <div class="description-info">
+            <span>
+              Currently I studying about <br>web development.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT -->
+
+    <!-- SKILLS -->
+    <div id="skills">
+      <h1 id="header-text-center">SKILLS</h1>
+      <div id="skills-child">
+        <div class="col col1">
+          <div class="icon">
+            <!-- <img src="plugins/img/gym.svg" alt="think" width="85px" height="85px"> -->
+          </div>
+          <div class="header-info">
+            <span>BACKEND</span>
+          </div>
+          <div class="description-info">
+            <div class="tech-use"><i class="fa-brands fa-php"></i></div>
+            <div class="skill-level">PHP</div>
+            <div class="skill-rate">8/10</div>
+          </div>
+          <div class="description-info">
+            <div class="tech-use"><i class="fa-brands fa-laravel"></i></div>
+            <div class="skill-level">LARAVEL</div>
+            <div class="skill-rate">7.5/10</div>
+          </div>
+          <div class="description-info">
+            <div class="tech-use"><i class="fa fa-database"></i></div>
+            <div class="skill-level">MySQL</div>
+            <div class="skill-rate">8/10</div>
+          </div>
+        </div>
+        <div class="col col2">
+          <div class="icon">
+            <!-- <img src="plugins/img/read.svg" alt="think" width="85px" height="85px"> -->
+          </div>
+          <div class="header-info">
+            <span>FRONTEND</span>
+          </div>
+          <div class="description-info">
+            <div class="tech-use"><i class="fa-brands fa-html5"></i></div>
+            <div class="skill-level">HTML</div>
+            <div class="skill-rate">8/10</div>
+          </div>
+          <div class="description-info">
+            <div class="tech-use"><i class="fa-brands fa-css3-alt"></i></div>
+            <div class="skill-level">CSS</div>
+            <div class="skill-rate">8/10</div>
+          </div>
+          <div class="description-info">
+            <div class="tech-use"><i class="fa-brands fa-js"></i></div>
+            <div class="skill-level">JAVASCRIPT</div>
+            <div class="skill-rate">7.5/10</div>
+          </div>
+          <div class="description-info">
+            <div class="tech-use"><i class="fa-brands fa-react"></i></div>
+            <div class="skill-level">ReactJS</div>
+            <div class="skill-rate">4/10</div>
+          </div>
+        </div>
+        <div class="col col3">
+          <div class="icon">
+            <!-- <img src="plugins/img/webdev.svg" alt="think" width="85px" height="85px"> -->
+          </div>
+          <div class="header-info">
+            <span>VERSION CONTROL</span>
+          </div>
+          <div class="description-info">
+            <div class="tech-use"><i class="fa-brands fa-github"></i></div>
+            <div class="skill-level">GitHub</div>
+            <div class="skill-rate">7.5/10</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+  <!-- SKILLS -->
+
+  <!-- PROJECTS -->
+  <div id="projects">
+    <h1 id="header-text-center">MY PROJECTS</h1>
+    <div id="projects-child">
+      <div class="col col1">
+        <div class="icon">
+          <a href="plugins/img/ipos-project.png">
+            <img src="plugins/img/ipos-project.png" alt="think" width="100%" height="120px">
+          </a>
+        </div>
+        <div class="header-info">
+          <a href="https://cryptoglen.000webhostapp.com/login" target="_blank"><span>iPOS</span></a>
+        </div>
+        <div class="description-info">
+          <span>
+            iPOS is an Inventory and Point of Sales System for small cafe/milktea shop
+          </span>
+        </div>
+        <div class="tech-div">
+          <div class="tech-used html">
+            <span>HTML</span>
+          </div>
+          <div class="tech-used css">
+            <span>CSS</span>
+          </div>
+          <div class="tech-used javascript">
+            <span>JAVASCRIPT</span>
+          </div>
+          <div class="tech-used laravel">
+            <span>LARAVEL</span>
+          </div>
+          <div class="tech-used mysql">
+            <span>MYSQL</span>
+          </div>
+          <div class="tech-used chartjs">
+            <span>CHART JS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- PROJECTS -->
+
+  <!-- FEEDBACK -->
+  <!-- FEEDBACK -->
+
+  <!-- CONTACT -->
+  <!-- CONTACT -->
+
+</body>
+
+</html>
+<script>
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  var mybutton = document.getElementById("myBtn");
+
+  function myFunction() {
+    // if (window.pageYOffset > sticky) {
+      // header.classList.add("sticky");
+    // } else {
+      // header.classList.remove("sticky");
+    // }
+  }
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  window.onscroll = function () { 
+    scrollFunction(); 
+    // myFunction();
+  };
+  // window.onscroll = function () { 
+  //   myFunction() 
+  // };
+</script>
