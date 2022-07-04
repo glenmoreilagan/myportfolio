@@ -118,6 +118,12 @@
      /* overflow: hidden; */
      /* margin-top: 30px; */
    }
+
+   #about-child .col,
+   #skills-child .col,
+   #projects-child .col {
+     width: 92vw;
+   }
  }
 
  @media (max-width: 858px) {
@@ -198,6 +204,10 @@
    #projects-child .col {
      width: 92vw;
    }
+
+   div#projects {
+    margin-top: 36em;
+  }
  }
 
  .__content {
@@ -244,7 +254,7 @@
    border: none;
    padding: 10px;
    color: #fff;
-   margin-top: 50px;
+   margin-top: 15px;
    cursor: pointer;
  }
 
@@ -385,7 +395,7 @@
 
  #projects-child>div {
   /* border: 1px solid #DEDEDE; */
-  width: 15vw;
+  /* width: 15vw; */
   height: 300px;
   margin: 1em;
   padding: 1em;
@@ -450,4 +460,18 @@
 .tech-div .chartjs {
   color: #F67C97;
   border-color: #F67C97;
+}
+#projects #projects-child .projects-panel {
+  position: relative;
+}
+
+#projects #projects-child .git-repo-div {
+  position: absolute;
+  top: 285px;
+}
+
+.my-social-links{
+  text-decoration: none;
+  color: #2A3543;
+  font-size: 28px;
 }
