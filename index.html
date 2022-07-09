@@ -13,13 +13,14 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <body>
-  <nav id="myHeader">
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-      <i class="fas fa-bars"></i>
-    </label>
-    <label class="logo" for="">PORTFOLIO</label>
-
+  <div id="myHeader">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+    <label class="logo" for="">GLEN</label>
+    
     <ul>
       <li><a class="active" href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -29,240 +30,254 @@
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
+</div>
 
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
   <!-- HOME -->
   <!-- <div class="__content"> -->
 
-    <div id="home">
-      <div class="col1">
-        <div class="col1-text">
-          <h4>Hi I'm</h4>
-          <h1 style="font-weight: 800;">GLENMORE</h1>
-          <!-- <br> -->
-          <small>I am self-taught <b class="text-bold">Fullstack Web Developer</b>. You can hire/contact me if you wanna build a customize web application for your business.</small>
-          <br>
-          <br>
-          
-          <a href="https://github.com/glenmoreilagan" target="_blank" class="my-social-links" title="GitHub Profile">
-            <i class="fa-brands fa-github-square"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/glenmoreilagan/" target="_blank" class="my-social-links" title="LinkedIn Profile">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://www.facebook.com/glenmarami" target="_blank" class="my-social-links" title="Facebook Profile">
-            <i class="fa-brands fa-facebook-square"></i>
-          </a>
-          
-          <br>
-          
-          <a href="plugins/files/glenmore-ilagan-cv.pdf" download rel="noopener noreferrer" target="_blank">
-            <button id="btn-download-cv">DOWNLOAD CV</button>
-          </a>
-        </div>
-      </div>
-
-      <div class="col2">
-        <img src="plugins/img/coding-edited.svg" alt="coding-time">
-      </div>
-    </div>
-    <!-- HOME -->
-
-    <!-- ABOUT -->
-    <div id="about">
-      <h1 id="header-text-center">ABOUT US</h1>
-      <div id="about-child">
-        <div class="col col1">
-          <div class="icon">
-            <img src="plugins/img/gym.svg" alt="think" width="85px" height="85px">
-          </div>
-          <div class="header-info">
-            <span>GYM</span>
-          </div>
-          <div class="description-info">
-            <span>
-              One of my favorite hobby is workout to get physical fit.
-            </span>
-          </div>
-        </div>
-        <div class="col col2">
-          <div class="icon">
-            <img src="plugins/img/read.svg" alt="think" width="85px" height="85px">
-          </div>
-          <div class="header-info">
-            <span>READ</span>
-          </div>
-          <div class="description-info">
-            <span>
-              Sometimes I read books about money like rich dad and poor dad.
-            </span>
-          </div>
-        </div>
-        <div class="col col3">
-          <div class="icon">
-            <img src="plugins/img/webdev.svg" alt="think" width="85px" height="85px">
-          </div>
-          <div class="header-info">
-            <span>CODE</span>
-          </div>
-          <div class="description-info">
-            <span>
-              Currently I studying about <br>web development.
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ABOUT -->
-
-    <!-- SKILLS -->
-    <div id="skills">
-      <h1 id="header-text-center">SKILLS</h1>
-      <div id="skills-child">
-        <div class="col col1">
-          <div class="icon">
-            <!-- <img src="plugins/img/gym.svg" alt="think" width="85px" height="85px"> -->
-          </div>
-          <div class="header-info">
-            <span>BACKEND</span>
-          </div>
-          <div class="description-info">
-            <div class="tech-use"><i class="fa-brands fa-php"></i></div>
-            <div class="skill-level">PHP</div>
-            <div class="skill-rate">8/10</div>
-          </div>
-          <div class="description-info">
-            <div class="tech-use"><i class="fa-brands fa-laravel"></i></div>
-            <div class="skill-level">LARAVEL</div>
-            <div class="skill-rate">7.5/10</div>
-          </div>
-          <div class="description-info">
-            <div class="tech-use"><i class="fa fa-database"></i></div>
-            <div class="skill-level">MySQL</div>
-            <div class="skill-rate">8/10</div>
-          </div>
-        </div>
-        <div class="col col2">
-          <div class="icon">
-            <!-- <img src="plugins/img/read.svg" alt="think" width="85px" height="85px"> -->
-          </div>
-          <div class="header-info">
-            <span>FRONTEND</span>
-          </div>
-          <div class="description-info">
-            <div class="tech-use"><i class="fa-brands fa-html5"></i></div>
-            <div class="skill-level">HTML</div>
-            <div class="skill-rate">8/10</div>
-          </div>
-          <div class="description-info">
-            <div class="tech-use"><i class="fa-brands fa-css3-alt"></i></div>
-            <div class="skill-level">CSS</div>
-            <div class="skill-rate">8/10</div>
-          </div>
-          <div class="description-info">
-            <div class="tech-use"><i class="fa-brands fa-js"></i></div>
-            <div class="skill-level">JAVASCRIPT</div>
-            <div class="skill-rate">7.5/10</div>
-          </div>
-          <div class="description-info">
-            <div class="tech-use"><i class="fa-brands fa-react"></i></div>
-            <div class="skill-level">ReactJS</div>
-            <div class="skill-rate">4/10</div>
-          </div>
-        </div>
-        <div class="col col3">
-          <div class="icon">
-            <!-- <img src="plugins/img/webdev.svg" alt="think" width="85px" height="85px"> -->
-          </div>
-          <div class="header-info">
-            <span>VERSION CONTROL</span>
-          </div>
-          <div class="description-info">
-            <div class="tech-use"><i class="fa-brands fa-github"></i></div>
-            <div class="skill-level">GitHub</div>
-            <div class="skill-rate">7.5/10</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  <!-- </div> -->
-  <!-- SKILLS -->
-
-  <!-- PROJECTS -->
-  <div id="projects">
-    <h1 id="header-text-center">MY PROJECTS</h1>
-    <div id="projects-child">
-      <div class="col col1 projects-panel">
-        <div class="icon">
-          <a href="plugins/img/ipos-project.png">
-            <img src="plugins/img/ipos-project.png" alt="think" width="100%" height="120px">
-          </a>
-        </div>
-        <div class="header-info">
-          <a href="https://cryptoglen.000webhostapp.com/login" target="_blank"><span>iPOS</span></a>
-        </div>
-        <div class="description-info">
-          <span>
-            iPOS is an Inventory and Point of Sales System for small cafe/milktea shop
-          </span>
-        </div>
-        <div class="tech-div">
-          <div class="tech-used html">
-            <span>HTML</span>
-          </div>
-          <div class="tech-used css">
-            <span>CSS</span>
-          </div>
-          <div class="tech-used javascript">
-            <span>JAVASCRIPT</span>
-          </div>
-          <div class="tech-used laravel">
-            <span>LARAVEL</span>
-          </div>
-          <div class="tech-used mysql">
-            <span>MYSQL</span>
-          </div>
-          <div class="tech-used chartjs">
-            <span>CHART JS</span>
-          </div>
-        </div>
-        <div class="git-repo-div">
-          <div class="git-repo-link">
-            <a href="https://htmlpreview.github.io/?https://github.com/glenmoreilagan/myportfolio/blob/main/index.html" class="my-social-links" title="GitHub Repository">
-              <i class="fa-brands fa-github-square"></i>
+    <div class="content">
+      <div id="home">
+        <div class="col1">
+          <div class="col1-text">
+            <h1 class="myname">GLENMORE ILAGAN</h1>
+            <!-- <br> -->
+            <div class="aboutme-div">
+              <small class="aboutme">I am self-taught <b class="text-bold">Fullstack Web Developer</b>. You can hire/contact me through my social links below if you wanna build a customize web application for your business.</small>
+            </div>
+            <br>
+            <br>
+            
+            <a href="https://github.com/glenmoreilagan" target="_blank" class="my-social-links" title="GitHub Profile">
+              <i class="fa-brands fa-github-square social-icons"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/glenmoreilagan/" target="_blank" class="my-social-links" title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin social-icons"></i>
+            </a>
+            <a href="https://www.facebook.com/glenmarami" target="_blank" class="my-social-links" title="Facebook Profile">
+              <i class="fa-brands fa-facebook-square social-icons"></i>
+            </a>
+            
+            <br>
+            
+            <a href="plugins/files/glenmore-ilagan-cv.pdf" download rel="noopener noreferrer" target="_blank">
+              <button id="btn-download-cv">MY RESUME/CV</button>
             </a>
           </div>
         </div>
+
+        <div class="col2">
+          <img src="plugins/img/coding-edited.svg" alt="coding-time">
+        </div>
+      </div>
+      <!-- HOME -->
+
+      <!-- ABOUT -->
+      <div id="about">
+        <h1 id="header-text-center">ABOUT US</h1>
+        <div id="about-child">
+          <div class="col col1">
+            <div class="icon">
+              <img src="plugins/img/gym.svg" alt="think" width="85px" height="85px">
+            </div>
+            <div class="header-info">
+              <span>GYM</span>
+            </div>
+            <div class="description-info">
+              <span>
+                One of my favorite hobby is workout to get physical fit.
+              </span>
+            </div>
+          </div>
+          <div class="col col2">
+            <div class="icon">
+              <img src="plugins/img/read.svg" alt="think" width="85px" height="85px">
+            </div>
+            <div class="header-info">
+              <span>READ</span>
+            </div>
+            <div class="description-info">
+              <span>
+                Sometimes I read books about money like rich dad and poor dad.
+              </span>
+            </div>
+          </div>
+          <div class="col col3">
+            <div class="icon">
+              <img src="plugins/img/webdev.svg" alt="think" width="85px" height="85px">
+            </div>
+            <div class="header-info">
+              <span>CODE</span>
+            </div>
+            <div class="description-info">
+              <span>
+                Currently I studying about <br>web development.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ABOUT -->
+
+      <!-- SKILLS -->
+      <div id="skills">
+        <h1 id="header-text-center">SKILLS</h1>
+        <div id="skills-child">
+          <div class="col col1">
+            <div class="icon">
+              <!-- <img src="plugins/img/gym.svg" alt="think" width="85px" height="85px"> -->
+            </div>
+            <div class="header-info">
+              <span>BACKEND</span>
+            </div>
+            <div class="description-info">
+              <div class="tech-use"><i class="fa-brands fa-php"></i></div>
+              <div class="skill-level">PHP</div>
+              <div class="skill-rate">8/10</div>
+            </div>
+            <div class="description-info">
+              <div class="tech-use"><i class="fa-brands fa-laravel"></i></div>
+              <div class="skill-level">LARAVEL</div>
+              <div class="skill-rate">7.5/10</div>
+            </div>
+            <div class="description-info">
+              <div class="tech-use"><i class="fa fa-database"></i></div>
+              <div class="skill-level">MySQL</div>
+              <div class="skill-rate">8/10</div>
+            </div>
+          </div>
+          <div class="col col2">
+            <div class="icon">
+              <!-- <img src="plugins/img/read.svg" alt="think" width="85px" height="85px"> -->
+            </div>
+            <div class="header-info">
+              <span>FRONTEND</span>
+            </div>
+            <div class="description-info">
+              <div class="tech-use"><i class="fa-brands fa-html5"></i></div>
+              <div class="skill-level">HTML</div>
+              <div class="skill-rate">8/10</div>
+            </div>
+            <div class="description-info">
+              <div class="tech-use"><i class="fa-brands fa-css3-alt"></i></div>
+              <div class="skill-level">CSS</div>
+              <div class="skill-rate">8/10</div>
+            </div>
+            <div class="description-info">
+              <div class="tech-use"><i class="fa-brands fa-js"></i></div>
+              <div class="skill-level">JAVASCRIPT</div>
+              <div class="skill-rate">7.5/10</div>
+            </div>
+            <div class="description-info">
+              <div class="tech-use"><i class="fa-brands fa-react"></i></div>
+              <div class="skill-level">ReactJS</div>
+              <div class="skill-rate">4/10</div>
+            </div>
+          </div>
+          <div class="col col3">
+            <div class="icon">
+              <!-- <img src="plugins/img/webdev.svg" alt="think" width="85px" height="85px"> -->
+            </div>
+            <div class="header-info">
+              <span>VERSION CONTROL</span>
+            </div>
+            <div class="description-info">
+              <div class="tech-use"><i class="fa-brands fa-github"></i></div>
+              <div class="skill-level">GitHub</div>
+              <div class="skill-rate">7.5/10</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+    <!-- SKILLS -->
+
+    <!-- PROJECTS -->
+    <div id="projects">
+      <h1 id="header-text-center">MY PROJECTS</h1>
+      <div id="projects-child">
+        <div class="col col1 projects-panel">
+          <div class="icon">
+            <a href="plugins/img/ipos-project.png">
+              <img src="plugins/img/ipos-project.png" alt="think" width="100%" height="120px">
+            </a>
+          </div>
+          <div class="header-info">
+            <a href="https://cryptoglen.000webhostapp.com/login" target="_blank"><span>iPOS</span></a>
+          </div>
+          <div class="description-info">
+            <span>
+              iPOS is an Inventory and Point of Sales System for small cafe/milktea shop
+            </span>
+          </div>
+          <div class="tech-div">
+            <div class="tech-used html">
+              <span>HTML</span>
+            </div>
+            <div class="tech-used css">
+              <span>CSS</span>
+            </div>
+            <div class="tech-used javascript">
+              <span>JAVASCRIPT</span>
+            </div>
+            <div class="tech-used laravel">
+              <span>LARAVEL</span>
+            </div>
+            <div class="tech-used mysql">
+              <span>MYSQL</span>
+            </div>
+            <div class="tech-used chartjs">
+              <span>CHART JS</span>
+            </div>
+          </div>
+          <div class="git-repo-div">
+            <div class="git-repo-link">
+              <a href="https://htmlpreview.github.io/?https://github.com/glenmoreilagan/myportfolio/blob/main/index.html" class="my-social-links" title="GitHub Repository">
+                <i class="fa-brands fa-github-square social-icons"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- PROJECTS -->
+
+    <!-- FEEDBACK -->
+    <!-- FEEDBACK -->
+
+    <!-- CONTACT -->
+    <!-- CONTACT -->
   </div>
-  <!-- PROJECTS -->
-
-  <!-- FEEDBACK -->
-  <!-- FEEDBACK -->
-
-  <!-- CONTACT -->
-  <!-- CONTACT -->
 
 </body>
 
 </html>
 <script>
-  var header = document.getElementById("myHeader");
-  var sticky = header.offsetTop;
-  var mybutton = document.getElementById("myBtn");
-
+  
+  // window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("myHeader");
+  var sticky = navbar.offsetTop;
+  
   function myFunction() {
-    // if (window.pageYOffset > sticky) {
-      // header.classList.add("sticky");
-    // } else {
-      // header.classList.remove("sticky");
-    // }
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
   }
+  
+  var mybutton = document.getElementById("myBtn");
+  var checkbtn = document.getElementById("check");
 
   function scrollFunction() {
+    let nav_isopen = checkbtn.checked
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
+      if(nav_isopen) {
+        mybutton.style.display = "none";
+      } else {
+        mybutton.style.display = "block";
+      }
     } else {
       mybutton.style.display = "none";
     }
@@ -273,9 +288,8 @@
     document.documentElement.scrollTop = 0;
   }
 
-
   window.onscroll = function () { 
     scrollFunction(); 
-    // myFunction();
+    myFunction();
   };
 </script>
