@@ -119,9 +119,9 @@ nav ul li a:hover {
   z-index: 1;
 }
 
-.sticky + .content {
+/* .sticky + .content {
   padding-top: 60px;
-}
+} */
 
 .header {
   background-color: #f1f1f1;
@@ -257,7 +257,7 @@ nav ul li a:hover {
   /* padding: 10px; */
   /* overflow: hidden; */
   /* border: 1px solid; */
-  margin-top: 5em;
+  margin-top: -20px;
 }
 
 #home > div {
@@ -305,7 +305,7 @@ small {
   width: 550px;
   height: 450px;
   /* overflow: hidden; */
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 /* ABOUT DIV */
